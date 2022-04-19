@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형레이아웃변화</title>
+    <style>
+        * {margin: 0; padding: 0;}
+
+        body {overflow-x: hidden; color: #333;}
+        h3 {font-size: 40px; text-align: center; margin-bottom: 40px;}
+        h4 {font-size: 25px; margin-bottom: 20px;}
+        
+        .before01 {
+            padding: 100px 0; 
+             
+        }
+        .before01 .cont {
+            max-width: 1280px;
+            width: 100%;
+            margin: 0 auto; 
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .before01 .cont .items {
+            width: 24%;
+            margin-bottom: 20px;
+        }
+        .before01 .cont .items figure {
+            height: 250px;
+        }
+        .before01 .cont .items figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+        .before01 .cont .items div {
+            background-color: #fff;
+        }
+
+        .after02 {
+            padding: 100px 0; 
+             
+        }
+        .after02 h3 {font-size: 30px;}
+        .after02 h4 {font-size: 20px; margin-bottom: 10px;}
+        .after02 .cont {
+            width: calc(100% - 30px);
+            margin: 0 auto; 
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .after02 .cont .items {
+            /* width: 48%; */
+            width: calc(100% / 2 - 10px);
+             
+            margin-bottom: 30px;
+        }
+        .after02 .cont .items figure {
+            height: 250px;
+        }
+        .after02 .cont .items figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+ 
+    </style>
+</head>
+<body>
+    <section class="before01">
+        <h3>반응형 레이아웃 변화 전</h3>
+        <div class="cont">
+            <div class="items">
+                <figure>
+                    <img src="images/coffee01.jpg" alt="" />
+                </figure>
+                <div class="info">
+                    <h4>content title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div><!-- .info end -->
+            </div><!-- .items end -->
+            <div class="items">
+                <figure>
+                    <img src="images/coffee02.jpg" alt="" />
+                </figure>
+                <div class="info">
+                    <h4>content title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div><!-- .info end -->
+            </div><!-- .items end -->
+            <div class="items">
+                <figure>
+                    <img src="images/coffee03.jpg" alt="" />
+                </figure>
+                <div class="info">
+                    <h4>content title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div><!-- .info end -->
+            </div><!-- .items end -->
+            <div class="items">
+                <figure>
+                    <img src="images/coffee04.jpg" alt="" />
+                </figure>
+                <div class="info">
+                    <h4>content title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div><!-- .info end -->
+            </div><!-- .items end -->
+        </div><!-- .cont end -->
+    </section>
+
+    <section class="after02">
+        <h3>반응형 레이아웃 변화 후</h3>
+        <div class="cont">
+            <div class="items">
+                <figure>
+                    <img src="images/spring01.jpg" alt="" />
+                </figure>
+                <div class="info">
+                    <h4>content title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div><!-- .info end -->
+            </div><!-- .items end -->
+            <div class="items">
+                <figure>
+                    <img src="images/spring02.jpg" alt="" />
+                </figure>
+                <div class="info">
+                    <h4>content title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div><!-- .info end -->
+            </div><!-- .items end -->
+            <div class="items">
+                <figure>
+                    <img src="images/spring03.jpg" alt="" />
+                </figure>
+                <div class="info">
+                    <h4>content title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div><!-- .info end -->
+            </div><!-- .items end -->
+            <div class="items">
+                <figure>
+                    <img src="images/spring04.jpg" alt="" />
+                </figure>
+                <div class="info">
+                    <h4>content title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div><!-- .info end -->
+            </div><!-- .items end -->
+        </div><!-- .cont end -->
+    </section>
+</body>
+</html>
